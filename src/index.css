@@ -5,9 +5,125 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: blueviolet;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.long_text {
+  font-size: 1rem;
+  color: white;
+  width: 33%; 
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+
+.medium_text {
+    font-size: 1.5rem;
+    color: white;
+    width: 50%; 
+    margin-left: 33%; 
+}
+
+.big_text {
+  padding-top: 15%;
+  font-size: 3rem;
+  color: white;
+  width: 50%; 
+  margin-left: 33%; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  margin-bottom: 15%;
+}
+
+.api_response {
+  font-size: 2rem;
+  color: white;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+input {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  max-width: 85%;
+}
+
+input:focus {
+  outline: 2px solid white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Button on top of the Input */
+.wrapper {
+  margin-top: 3%;
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+}
+
+.wrapper input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.wrapper button {
+  background: white;
+  border-radius: 50px;
+  aspect-ratio: 1;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 5px;
+}
+
+.button {
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: rgba(168, 162, 162, 0.6); /* bg-blue-500 */
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem; /* rounded-lg */
+  border-bottom: 4px solid rgba(255, 255, 255, 0.6); /* border-blue-600 */
+}
+
+.button:hover {
+  filter: brightness(1.1); /* hover:brightness-110 */
+  transform: translateY(-1px); /* hover:-translate-y-[1px] */
+  border-bottom-width: 6px; /* hover:border-b-[6px] */
+}
+
+.button:active {
+  filter: brightness(0.9); /* active:brightness-90 */
+  transform: translateY(2px); /* active:translate-y-[2px] */
+  border-bottom-width: 2px; /* active:border-b-[2px] */
 }
